@@ -56,21 +56,24 @@
             text-decoration: none;
             margin: 5px;
         }
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            text-align: left;
-            padding: 30px 20px;
-            background: linear-gradient(to bottom right, #007BFF, #ffffff);
-            color: white;
-        }
-        .footer-section {
-            flex: 1 1 45%;
-            max-width: 45%;
-            margin: 10px;
-        }
+.footer {
+    color: white;
+    padding: 30px 0;
+    /* No background! */
+}
+.footer-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.footer-section {
+    flex: 1 1 45%;
+    margin: 10px;
+}
         .sponsor {
             text-align: center;
         }
@@ -137,6 +140,7 @@
     </div>
 
     <div class="footer">
+          <div class="footer-container">
         <div class="footer-section contact">
             <h2>Contact Information</h2>
             <p>Phone: +19544128682</p>
@@ -146,6 +150,7 @@
             <img src="logo.png" alt="IceQori Logo">
             <p>Sponsored by <strong>IceQori</strong></p>
         </div>
+          </div>
     </div>
 </body>
 </html>
